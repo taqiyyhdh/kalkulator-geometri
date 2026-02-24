@@ -89,3 +89,85 @@ function showResult(modal, result, unit) {
       const luas = Math.PI * a * b;
       showResult(modal, luas, 'm²');
     });
+
+    // BANGUN RUANG
+
+    // Kubus
+    document.querySelector('#modalKubus .btn-primary').addEventListener('click', function() {
+      const modal = document.getElementById('modalKubus');
+      const s = getInputValue(modal, 0);
+      if (s <= 0) { alert('Masukkan nilai yang valid!'); return; }
+      const volume = s * s * s;
+      showResult(modal, volume, 'm³');
+    });
+
+    // Balok
+    document.querySelector('#modalBalok .btn-primary').addEventListener('click', function() {
+      const modal = document.getElementById('modalBalok');
+      const p = getInputValue(modal, 0);
+      const l = getInputValue(modal, 1);
+      const t = getInputValue(modal, 2);
+      if (p <= 0 || l <= 0 || t <= 0) { alert('Masukkan nilai yang valid!'); return; }
+      const volume = p * l * t;
+      showResult(modal, volume, 'm³');
+    });
+
+    // Bola
+    document.querySelector('#modalBola .btn-primary').addEventListener('click', function() {
+      const modal = document.getElementById('modalBola');
+      const r = getInputValue(modal, 0);
+      if (r <= 0) { alert('Masukkan nilai yang valid!'); return; }
+      const volume = (4/3) * Math.PI * r * r * r;
+      showResult(modal, volume, 'm³');
+    });
+
+    // Silinder
+    document.querySelector('#modalSilinder .btn-primary').addEventListener('click', function() {
+      const modal = document.getElementById('modalSilinder');
+      const r = getInputValue(modal, 0);
+      const t = getInputValue(modal, 1);
+      if (r <= 0 || t <= 0) { alert('Masukkan nilai yang valid!'); return; }
+      const volume = Math.PI * r * r * t;
+      showResult(modal, volume, 'm³');
+    });
+
+    // Kerucut
+    document.querySelector('#modalKerucut .btn-primary').addEventListener('click', function() {
+      const modal = document.getElementById('modalKerucut');
+      const r = getInputValue(modal, 0);
+      const t = getInputValue(modal, 1);
+      if (r <= 0 || t <= 0) { alert('Masukkan nilai yang valid!'); return; }
+      const volume = (1/3) * Math.PI * r * r * t;
+      showResult(modal, volume, 'm³');
+    });
+
+    // Limas
+    document.querySelector('#modalLimas .btn-primary').addEventListener('click', function() {
+      const modal = document.getElementById('modalLimas');
+      const s = getInputValue(modal, 0);
+      const t = getInputValue(modal, 1);
+      if (s <= 0 || t <= 0) { alert('Masukkan nilai yang valid!'); return; }
+      const volume = (1/3) * s * s * t;
+      showResult(modal, volume, 'm³');
+    });
+
+    // Prisma
+    document.querySelector('#modalPrisma .btn-primary').addEventListener('click', function() {
+      const modal = document.getElementById('modalPrisma');
+      const a = getInputValue(modal, 0);
+      const ta = getInputValue(modal, 1);
+      const t = getInputValue(modal, 2);
+      if (a <= 0 || ta <= 0 || t <= 0) { alert('Masukkan nilai yang valid!'); return; }
+      const volume = 0.5 * a * ta * t;
+      showResult(modal, volume, 'm³');
+    });
+
+    // Tabung
+    document.querySelector('#modalTabung .btn-primary').addEventListener('click', function() {
+      const modal = document.getElementById('modalTabung');
+      const r = getInputValue(modal, 0);
+      const t = getInputValue(modal, 1);
+      if (r <= 0 || t <= 0) { alert('Masukkan nilai yang valid!'); return; }
+      const volume = Math.PI * r * r * t;
+      showResult(modal, volume, 'm³');
+    });
