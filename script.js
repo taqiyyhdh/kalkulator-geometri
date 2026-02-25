@@ -122,16 +122,6 @@ document.querySelector('#modalBola .btn-primary').addEventListener('click', func
   showResult(modal, volume, 'm³');
 });
 
-// Silinder
-document.querySelector('#modalSilinder .btn-primary').addEventListener('click', function() {
-  const modal = document.getElementById('modalSilinder');
-  const r = getInputValue(modal, 0);
-  const t = getInputValue(modal, 1);
-  if (r <= 0 || t <= 0) { alert('Masukkan nilai yang valid!'); return; }
-  const volume = Math.PI * r * r * t;
-  showResult(modal, volume, 'm³');
-});
-
 // Kerucut
 document.querySelector('#modalKerucut .btn-primary').addEventListener('click', function() {
   const modal = document.getElementById('modalKerucut');
