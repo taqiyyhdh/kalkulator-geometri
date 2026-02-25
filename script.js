@@ -7,6 +7,7 @@ function showResult(modal, result, unit) {
   const resultDiv = modal.querySelector('.alert.alert-success');
   const span = resultDiv.querySelector('span');
   span.textContent = parseFloat(result.toFixed(4)) + ' ' + unit;
+  resultDiv.classList.remove('d-none');
 }
 
     // BANGUN DATAR
@@ -171,3 +172,4 @@ function showResult(modal, result, unit) {
       const volume = Math.PI * r * r * t;
       showResult(modal, volume, 'm³');
     });
+
