@@ -172,4 +172,14 @@ function showResult(modal, result, unit) {
       const volume = Math.PI * r * r * t;
       showResult(modal, volume, 'm³');
     });
+    
+    // Reset modal
+    document.querySelectorAll('.modal').forEach(modal => {
+      modal.addEventListener('hidden.bs.modal', function() {
+        const form = this.querySelector('form');
+        if (form) form.reset();
+        const resultDiv = this.querySelector('.alert.alert-success');
+        if (resultDiv) resultDiv.classList.add('d-none');
+      });
+    });
 
