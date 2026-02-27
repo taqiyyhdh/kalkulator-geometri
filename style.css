@@ -1,0 +1,12 @@
+body {
+  background: linear-gradient(135deg, #ffd8de 0%, #fddae3 100%) !important;
+}
+
+.bg-primary.bg-gradient {
+  background: linear-gradient(135deg, #fc7eaa 0%, #ff74a9 30%, #ff74a9 100%) !important;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+}
+
+footer.bg-dark {
+  background: linear-gradient(135deg, #372621 0%, #442a24 100%) !important;
+}
