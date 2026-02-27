@@ -7,6 +7,18 @@ body {
   border-bottom: 2px solid rgba(0, 0, 0, 0.05);
 }
 
+.nav-pills .nav-link {
+  background: linear-gradient(135deg, #9f1d3d 0%, #460d1b 100%) !important;
+  color: white !important;
+  border: 2px solid #6e162c !important;
+}
+
+.nav-pills .nav-link.active {
+  background: linear-gradient(135deg, #460d1b 0%, #9f1d3d  100%) !important;
+  color: white !important;
+  border-color: #6e162c !important;
+}
+    
 footer.bg-dark {
   background: linear-gradient(135deg, #372621 0%, #442a24 100%) !important;
 }
