@@ -36,6 +36,12 @@ body {
   border-color: #fa79a0 !important;
 }
 
+.modal-dialog {
+  display: flex;
+  align-items: center;
+  min-height: calc(100% - 3.5rem);
+}
+
 footer.bg-dark {
   background: linear-gradient(135deg, #372621 0%, #442a24 100%) !important;
 }
